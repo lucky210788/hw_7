@@ -8,10 +8,10 @@ import {Chart} from 'chart.js';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  public lineChart = [];
-  public barChart = [];
-  public horizontalBarChart = [];
-  public doughnutChart = [];
+  public lineChart: Array<any> = [];
+  public barChart: Array<any> = [];
+  public horizontalBarChart: Array<any> = [];
+  public doughnutChart: Array<any> = [];
 
   constructor() { }
   ngOnInit() {
