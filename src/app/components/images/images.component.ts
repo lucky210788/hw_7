@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./images.component.scss']
 })
 export class ImagesComponent implements OnInit {
-  public images: Array<any> = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+  public images = [
+    {src: 'assets/1.jpg', alt: '1'},
+    {src: 'assets/2.jpg', alt: '2'},
+    {src: 'assets/3.jpg', alt: '3'}
+  ];
   constructor() { }
 
   ngOnInit() {
   }
-
 }
